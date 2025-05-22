@@ -9,8 +9,26 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js"
+      integrity="sha512-iZkSskGK6ztK3mG293FyahxuEzQjj/qpKBnvMCoXD42sBLOd3ljqCt4nZWbS2YYAEQiNMex832AhAU4nFILWoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
-  <body>
+  <!--First line of tailwind CSS using utility classes-->
+  <body class="big gray-100 text-gray-100">
+    <!--Navigation bar-->
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2x1 front-bold">My Website</h1>
+      <!--space along x-axis times 4 for all the  child element-->
+      <ul class="flex space x-4">
+        <li><a href="#">HOme</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
     <!--Footer section made with bootstrap-->
 
     <footer class="bg-dark text-white text-center pt-4 pb-1">
