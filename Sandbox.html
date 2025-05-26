@@ -2,30 +2,30 @@
     <html>
         <head>
             <style>
-       #block {
-        float: right;
-        height: 100px;
-        width: 100p;
-        background: black;
-        margin: 2 px;
+
+       #container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+       }
+       #block{
+        /* flex: flex-row, flex-shrink, flex-basis */
+        flex: 1 1 600px;
+        margin: 2px;
+         height: 100px;
+         width: 100px;
+         background: black;
        }
         </style>
         </head>
 
                 <body>
-                <div id="block">This is a block.</div>
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
-                This is a Sentence
+                <div id="container">
+                    <div id="block" style="flex-shrink: 1">This is a Block</div>
+                    <div id="block" style="flex-grow: 2">This is a Block</div>
+                    <div id="block" style="flex-grow: 1.5">This is a Block</div>
+                    
                 
                 </body>
                 </html>
