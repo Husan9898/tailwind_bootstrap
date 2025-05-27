@@ -10,7 +10,23 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
+  
+  <style>
+    #hero{
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/P.t.altaica_Tomak_Male.jpg/960px-P.t.altaica_Tomak_Male.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 -100px;
+      
+    }
+
+    #backplate {
+      background: lightgrey;
+      padding: 10px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
   <!--First line of tailwind CSS using utility classes-->
   <body class="big gray-100 text-gray-100">
     <!--Navigation bar-->
@@ -25,7 +41,8 @@
     </nav>
 
     <!--Hero Section-->
-    <section class="text-center py-60 bg-gray-200">
+    <section  id="hero" class="text-center py-60 bg-gray-200">
+      <div id="backplate">
     <h1 class="text-4xl front-bold text-gray-800">Welcome to my Website</h1>
     <p class="mt-4 text-lg text-gray-600">This was built using TailwindCSS</p>
     <button class="mt-6 bg-blue-600 text-White px-6 px-6 py-2 rounded-lg hover:bg-blue-700">Get started</button>
